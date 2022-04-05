@@ -42,7 +42,7 @@
 
   <div onload="initializeMaps()" id="map"></div>
 </body>
-<script src= "maps.js"></script>
+<script src= "js/maps.js"></script>
 
 </html>
 
