@@ -42,10 +42,13 @@
         </label>
 
 		      <button
+			  
+			   href="index.php"
 		        type="submit"
 		                  class="btn btn-success btn-block btn-lg graduateButton text-body registerColor"
 		                  style="color: white !important;; margin-bottom: 20px;"
 	                  >
+			 
 		      Send Current Location
 	        </button>
 				
