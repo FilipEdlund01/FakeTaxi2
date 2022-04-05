@@ -1,21 +1,15 @@
 <?php
   include_once 'header.php';
 ?>
-
-
-  <h2>Loginn</h2>
-
-
   <link rel="stylesheet" href="css/style.css" />
 
-
-    <body class="indexBackground">
-    <div class="mask d-flex align-items-center h-100 graduate">
+  <body class="indexBackground">
+    <div class="mask d-flex align-items-center h-100">
       <div class="container h-100 p-5">
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-            <div class="card">
-              <div class="card-body p-5" style="color:white">
+            <div class="card" style="background-color: white;">
+              <div class="card-body p-5">
                 <h2 class="text-uppercase text-center mb-3 headings">Login</h2>
                 
                   <form action="includes/login.inc.php" method="post" >
@@ -33,8 +27,9 @@
 
 
                     <div class="form-check d-flex justify-content-center mb-3"></div>
-                    <button class="btn btn-success btn-block btn-lg graduateButton text-body" style="color: white!important;" type="submit" name="submit"
-                      onclick="saveCookies()">Login!</button>
+                    <a class="btn btn-success btn-block btn-lg graduateButton text-body" style="color: white!important;" type="submit" name="submit"
+                    href="userMain.php" 
+                    onclick="saveCookies()">Login!</a>
                       <p class="text-center text-muted mt-3 paragraphs">Don’t have an account? <a href="register-form.html" class="fw-bold text-body"><u>Register here</u></a></p>
                   </form>
                 </div>

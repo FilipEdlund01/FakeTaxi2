@@ -1,13 +1,7 @@
 <?php
   include_once 'header.php';
 ?>
-
-
-  <h2>Sign Up</h2>
-
-
   <link rel="stylesheet" href="css/style.css" />
-
 
 
   <body class="indexBackground">
@@ -15,15 +9,15 @@
       <div class="container h-100 p-5">
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-            <div class="card">
+            <div class="card" style="background-color:white;">
               <div class="card-body p-5">
                 <h2 class="text-uppercase text-center mb-3 headings">Register</h2>
                 
                   <form action="includes/signup.inc.php" method="post" >
 
                     <div class="form-outline mb-3">
-                      <input type="text" id="name" class="form-control form-control-lg" name="name" />
                       <label class="form-label paragraphs" for="registerForm1">Name</label>
+                      <input type="text" id="name" class="form-control form-control-lg" name="name" />
                     </div>
 
                     <div class="form-outline mb-3">
@@ -48,8 +42,9 @@
                     </div>
 
                     <div class="form-check d-flex justify-content-center mb-3"></div>
-                    <button class="btn btn-success btn-block btn-lg graduateButton text-body registerColor" style="color: white!important;" type="submit" name="submit"
-                      onclick="saveCookies()">Register</button>
+                    <a class="btn btn-success btn-block btn-lg graduateButton text-body registerColor" style="color: white!important;" type="submit" name="submit"
+                    href ="userMain.php"  
+                    onclick="saveCookies()">Register</a>
                     <p class="text-center text-muted mt-3 mb-0">
                       Have already an account?
                       <a href="login.php" class="fw-bold text-body"><u>Login here</u></a>
@@ -63,7 +58,7 @@
       </div>
     </div>
   </div>
-  </div>
+</body>
 
  
 

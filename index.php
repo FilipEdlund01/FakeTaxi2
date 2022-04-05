@@ -1,69 +1,46 @@
-<!--Splitting the header and footer into separate documents makes things easier!-->
-<?php
-  include_once 'header.php';
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Fake Taxi</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>	
+<body class="indexBackground">
+	<div class="mask d-flex align-items-center h-100 graduate">
+	  <div class="container h-100">
+		<div class="row d-flex justify-content-center align-items-center h-100">
+		  <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+			<div class="h-100 row align-items-center">
+			  <div class="col" style="background:transparent">
+				<h1 class="text-uppercase text-center mb-4 mt-5" style="color: white; font-size: 45px;">Welcome to Fake Taxi!</h1>
+				
+				<form action="send_data.php" method="post">
+				
+                <div class="mb-4 text-center">
+                    <label class="form-label size:5" for="labelIndex" style="font-size: 30px; color: white;">First of all, we need you to sign up.</label>
+                </div>
 
-<section class="index-intro">
-  <h1>Fake Taxi</h1>
-  <p>Welcome to fake taxi</p>
-</section>
-
-
-
-<div>
-			<div class="p-5">
-				<h2 class="text-uppercase text-center" style="color: black;">Ride history:</h2>
-			</div>
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-12 col-lg-8" id="usermainDiv">
-					</div>
-				</div>
-			</div>
-			<div class="form-group">
-				<div class="d-flex col-xs-3 col-sm-6 col-md-8 col-lg-10">
-					<a href="newRide1.php">
-						<button type="button" class="btn btn-primary btn-circle" id="btndisclaimer">
-							<span class="glyphicon">&#x2b;</span>
-						</button>
+				<div class="d-flex justify-content-center">
+					
+                    <a href="signup.php">
+						<button type="button" class="btn btn-success btn-lg btn-block graduateButton text-body mr-3" style="color: white!important;">Register</button>
+					</a>
+					<a href="login.php">
+                    <button type="button" class="btn btn-success btn-lg btn-block graduateButton text-body ml-3" style="color: white!important;;">Login</button>
 					</a>
 
-				</div>
+				  </div>
+				</form>
+  
+			  </div>
 			</div>
+			</div>
+			</div>
+		  </div>
 		</div>
-
-    <table>
-
-<tr>
-    <th>ID</th>
-    <th>name</th>
-    <th>user_email</th>
-
-</tr>
-<?php
-$conn = mysqli_connect("localhost","root","","taxidb");
-$sql = "SELECT * FROM users";
-$result =$conn->query($sql);
-if($result->num_rows >0){
-while($row = $result-> fetch_assoc()){
-    echo "<tr><td>" .$row["usersId"]. "</td><td>" .$row["usersName"]. "</td><td>" .$row["usersEmail"]. "</td></tr>";
-
-}
-}else{
-echo "no Results";
-
-}
-$conn-> close();
-
-?>
-
-
-</table>
-
+	  </div>
+	</div>
 </body>
-<script src="js/script.js"></script>
-
-
-<?php
-  include_once 'footer.php';
-?>
+</html>
