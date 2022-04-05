@@ -71,25 +71,39 @@
     // Error messages
     if (isset($_GET["error"])) {
       if ($_GET["error"] == "emptyinput") {
-        echo "<p>Fill in all fields!</p>";
+        echo "<h1>Fill in all fields!</h1>";
+        $alert = "<script>alert('Fill all fields!');</script>";
+        echo $alert;
       }
       else if ($_GET["error"] == "invaliduid") {
         echo "<p>Choose a proper username!</p>";
+        $alert = "<script>alert('Choose a proper username!');</script>";
+        echo $alert;
       }
       else if ($_GET["error"] == "invalidemail") {
         echo "<p>Choose a proper email!</p>";
+        $alert = "<script>alert('Choose a proper email!');</script>";
+        echo $alert;
       }
       else if ($_GET["error"] == "passwordsdontmatch") {
         echo "<p>Passwords doesn't match!</p>";
+        $alert = "<script>alert('Passwords doesn't match!');</script>";
+        echo $alert;
       }
       else if ($_GET["error"] == "stmtfailed") {
         echo "<p>Something went wrong!</p>";
+        $alert = "<script>alert('Something went wrong!');</script>";
+        echo $alert;
       }
       else if ($_GET["error"] == "usernametaken") {
         echo "<p>Username already taken!</p>";
+        $alert = "<script>alert('Username already taken!');</script>";
+        echo $alert;
       }
       else if ($_GET["error"] == "none") {
         echo "<p>You have signed up!</p>";
+        $alert = "<script>alert('You have signed up!');</script>";
+        echo $alert;
       }
     }
   ?>
