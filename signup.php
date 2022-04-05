@@ -6,11 +6,11 @@
   <h2>Sign Up</h2>
   <div class="signup-form-form">
 
+  <link rel="stylesheet" href="css/style.css" />
 
 
 
-
-  <div style="background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-image: url('https://besu.info/wp-content/uploads/2018/04/road-3341140_1920.jpg');">
+  <body class="indexBackground">
     <div class="mask d-flex align-items-center h-100 graduate">
       <div class="container h-100 p-5">
         <div class="row d-flex justify-content-center align-items-center h-100">
@@ -23,12 +23,12 @@
 
                     <div class="form-outline mb-3">
                       <input type="text" id="name" class="form-control form-control-lg" name="name" />
-                      <label class="form-label paragraphs" for="registerForm1">name</label>
+                      <label class="form-label paragraphs" for="registerForm1">Name</label>
                     </div>
 
                     <div class="form-outline mb-3">
                       <input type="email" id="email" class="form-control form-control-lg" name="email" />
-                      <label class="form-label paragraphs" for="registerForm2">email</label>
+                      <label class="form-label paragraphs" for="registerForm2">Email</label>
                     </div>
 
                     <div class="form-outline mb-3">
@@ -66,7 +66,7 @@
   </div>
   </div>
  
-  </div>
+</body>
   <?php
     // Error messages
     if (isset($_GET["error"])) {
