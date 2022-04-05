@@ -14,13 +14,8 @@
 
   <p> Current latitude <span id="latitude1"></span>.</p>
   <p> Current longitude <span id="longitude1"></span>.</p>
- 
 
-
-
-
-
-                <form action="includes/location.inc.php" method="post" id="form">
+  <form action="includes/location.inc.php" method="post" id="form">
 
 
 <div class="form-outline">
@@ -45,55 +40,9 @@
 
   </form>
 
-  <div id="map"></div>
+  <div onload="initializeMaps()" id="map"></div>
 </body>
-<script>
-  var map = L.map("map").setView([50.074, 14.436], 13);
-
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution:
-      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-  }).addTo(map);
-
-  lat = 50.074;
-  lng = 14.436;
-  var selectedLatLng = 0;
-  var marker = -1;
-
-  function proceedFunc(e) {
-    console.log(selectedLatLng);
-  }
-
-  function onMapClick(e) {
-    if (marker == -1) {
-      let btn = document.createElement("button");
-      let link = document.createElement("a");
-      link.innerHTML = "Click me";
-      link.setAttribute("href", "./index.php");
-      btn.appendChild(link);
-      btn.onclick = proceedFunc;
-      marker = L.marker([lat, lng]).addTo(map).bindPopup(btn)
-      
-      //setLatLng(e.latlng).setContent("You clicked the map at " + e.latlng.toString());
-
-      
-    }
-    marker.setLatLng(e.latlng);
-    
-    console.log(e.latlng);
-    marker.openPopup();
-    selectedLatLng = e.latlng;
- 
-  }
-
-  map.on("click", onMapClick);
-
-  document.getElementById('latitude1').innerHTML = latlng;
-    document.getElementById('longitude1').innerHTML = lng;
-
-  
-
-</script>
+<script src= "maps.js"></script>
 
 </html>
 

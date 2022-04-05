@@ -14,20 +14,20 @@
       <div class="container h-100 p-5">
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-            <div class="card" style="border-radius: 15px">
+            <div class="card">
               <div class="card-body p-5">
-                <h2 class="text-uppercase text-center mb-3" style="color: black;">Register</h2>
+                <h2 class="text-uppercase text-center mb-3 headings">Login</h2>
                 
                   <form action="includes/login.inc.php" method="post" >
 
                     <div class="form-outline mb-3">
                       <input type="text" id="name" class="form-control form-control-lg" name="uid" />
-                      <label class="form-label" style="color: black;" for="registerForm1">user_name/email</label>
+                      <label class="form-label paragraphs" for="registerForm1">user_name/email</label>
                     </div>
 
                     <div class="form-outline mb-3">
                       <input type="password" id="password" class="form-control form-control-lg" name="pwd" />
-                      <label class="form-label" style="color: black;" for="registerForm4">password</label>
+                      <label class="form-label paragraphs" for="registerForm4">password</label>
                     </div>
 
 

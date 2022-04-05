@@ -15,36 +15,36 @@
       <div class="container h-100 p-5">
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-            <div class="card" style="border-radius: 15px">
+            <div class="card">
               <div class="card-body p-5">
-                <h2 class="text-uppercase text-center mb-3" style="color: black;">Register</h2>
+                <h2 class="text-uppercase text-center mb-3 headings">Register</h2>
                 
                   <form action="includes/signup.inc.php" method="post" >
 
                     <div class="form-outline mb-3">
                       <input type="text" id="name" class="form-control form-control-lg" name="name" />
-                      <label class="form-label" style="color: black;" for="registerForm1">name</label>
+                      <label class="form-label paragraphs" for="registerForm1">name</label>
                     </div>
 
                     <div class="form-outline mb-3">
                       <input type="email" id="email" class="form-control form-control-lg" name="email" />
-                      <label class="form-label" style="color: black;" for="registerForm2">email</label>
+                      <label class="form-label paragraphs" for="registerForm2">email</label>
                     </div>
 
                     <div class="form-outline mb-3">
                       <input type="text" id="user" class="form-control form-control-lg" name="uid" />
-                      <label class="form-label" style="color: black;" for="registerForm3">usesr_name</label>
+                      <label class="form-label paragraphs" for="registerForm3">Username</label>
                     </div>
 
                     <div class="form-outline mb-3">
                       <input type="password" id="password" class="form-control form-control-lg" name="pwd" />
-                      <label class="form-label" style="color: black;" for="registerForm4">password</label>
+                      <label class="form-label paragraphs" for="registerForm4">Password</label>
                     </div>
 
                     <div class="form-outline mb-2">
                       <input type="password" id="password_repeated" class="form-control form-control-lg"
                         name="pwdrepeat" />
-                      <label class="form-label" style="color: black;" for="registerForm5">Repeat your password</label>
+                      <label class="form-label paragraphs" for="registerForm5">Repeat your password</label>
                     </div>
 
                     <div class="form-check d-flex justify-content-center mb-3"></div>
@@ -52,7 +52,7 @@
                       onclick="saveCookies()">Register</button>
                     <p class="text-center text-muted mt-3 mb-0">
                       Have already an account?
-                      <a href="login.html" class="fw-bold text-body"><u>Login here</u></a>
+                      <a href="login.php" class="fw-bold text-body"><u>Login here</u></a>
                     </p>
                   </form>
                 </div>
