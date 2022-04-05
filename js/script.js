@@ -30,7 +30,7 @@ function initialize1() {
    //JÍZDY FILTROVANÉ USERNAME
    passVal();
    loadLatitude(latitude);
-   loadLongitude(longitude);
+    loadLongitude(longitude);
   }
 
 function generateTableHistory(name) {

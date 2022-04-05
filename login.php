@@ -27,9 +27,8 @@
 
 
                     <div class="form-check d-flex justify-content-center mb-3"></div>
-                    <a class="btn btn-success btn-block btn-lg graduateButton text-body" style="color: white!important;" type="submit" name="submit"
-                    href="userMain.php" 
-                    onclick="saveCookies()">Login!</a>
+                    <button class="btn btn-success btn-block btn-lg graduateButton text-body registerColor" style="color: white!important;" type="submit" name="submit"
+                      onclick="saveCookies()">Log in!</button>
                       <p class="text-center text-muted mt-3 paragraphs">Don’t have an account? <a href="register-form.html" class="fw-bold text-body"><u>Register here</u></a></p>
                   </form>
                 </div>

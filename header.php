@@ -43,7 +43,7 @@
       </div>
       
     </nav>
-    <div class="d-flex col-xs-3 col-sm-6 col-md-8 col-lg-10" style="align-items-center">
+    <div class="d-flex col-xs-3 col-sm-6 col-md-8 col-lg-10" style="">
 					<a href="newRide1.php">
 						<button type="button" class="btn btn-primary btn-circle" id="btndisclaimer">
 							<span class="glyphicon">&#x2b;</span>
