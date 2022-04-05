@@ -31,7 +31,7 @@
 
 <div class="form-check d-flex justify-content-center mb-3"></div>
 
-<button type="submit" name="submit">Send Location</button>
+<button type="submit" name="submit" href="index.php">Send Location</button>
 
 
 

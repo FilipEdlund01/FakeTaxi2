@@ -2,9 +2,9 @@
   include_once 'header.php';
 ?>
 
-<section class="signup-form">
+
   <h2>Loginn</h2>
-  <div class="signup-form-form">
+
 
   <link rel="stylesheet" href="css/style.css" />
 
@@ -45,8 +45,7 @@
       </div>
     </div>
   </div>
-  </div>
-</body>
+  
 
 
   <?php

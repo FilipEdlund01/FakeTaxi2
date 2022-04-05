@@ -3,6 +3,10 @@
   include_once 'includes/functions.inc.php';
 ?>
 
+
+
+
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -11,7 +15,7 @@
     <!--I won't do more than barebone HTML, since this isn't an HTML tutorial.-->
   
     <! link rel="stylesheet" href="css/reset.css">
-    <! link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <meta charset="utf-8" />
   <link rel="stylesheet" href="styles.css" />
@@ -21,8 +25,8 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <script defer src="check.js"></script>
 </head>
-  </head>
-  <body>
+
+  <body onload="initialize1()" >
 
     <!--A quick navigation-->
     <nav>
@@ -43,9 +47,42 @@
               echo "<li><a href='login.php'>Log in</a></li>";
             }
           ?>
+
+
         </ul>
       </div>
     </nav>
 
 <!--A quick wrapper to align the content (ends in footer.php)-->
-<div class="wrapper">
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

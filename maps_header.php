@@ -38,7 +38,7 @@
         <ul>
           <li><a href="index.php">Home</a></li>
           <li><a href="discover.php">About Us</a></li>
-          <li><a href="blog.php">Find Blogs</a></li>
+          <li><a href="blog.php">Find Route</a></li>
           <li><a href="maps.php">Maps</a></li>
           <?php
             if (isset($_SESSION["useruid"])) {
