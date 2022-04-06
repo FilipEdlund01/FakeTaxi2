@@ -13,7 +13,6 @@
   color: white; 
   font-size: 45px;
 }
-;
 .headings {
   color: black; 
   font-size: 35px;
@@ -99,7 +98,10 @@ width: 100%;
 
 }
 
-
+.images{
+  height: 100%;
+  width: 100%;
+}
 
 @keyframes mySlide {
   from{margin-left: 100%;}
