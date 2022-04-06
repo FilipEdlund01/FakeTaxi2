@@ -31,6 +31,8 @@ function onMapClick(e) {
   }
   marker.setLatLng(e.latlng);
   console.log(e.latlng);
+  console.log(e.latlng['lat']);
+  latitude1 = e.latlng['lat'];
   marker.openPopup();
   selectedLatLng = e.latlng;
 }

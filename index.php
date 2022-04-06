@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Fake Taxi</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>	
-<body class="indexBackground">
-<div class="vh-100"> 
-	<div class="mask d-flex align-items-center h-100">
-	  <div class="container h-100">
-		<div class="row d-flex justify-content-center align-items-center h-100">
-		  <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-			<div class="h-100 row align-items-center">
-			  <div class="col">
-				<h1 class="text-uppercase text-center mb-4 headingIndex">Welcome to Fake Taxi!</h1>
-				
-				<form action="send_data.php" method="post">
-				
-                <div class="mb-4 text-center">
-                    <label class="form-label size:5 paragraphsIndex" for="labelIndex">First of all, we need you to sign up.</label>
-                </div>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel ="stylesheet" href="css/index.css">
 
-				<div class="d-flex justify-content-center">
-					
-                    <a href="signup.php">
-						<button type="button" class="btn btn-success btn-lg btn-block graduateButton text-body mr-3" style="color: white!important;">Register</button>
-					</a>
-					<a href="login.php">
-                    <button type="button" class="btn btn-success btn-lg btn-block graduateButton text-body ml-3" style="color: white!important;;">Login</button>
-					</a>
 
-				  </div>
-				</form>
-  
-			  </div>
-			</div>
-			</div>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	</div>
-</div>
+	<title>Main Page</title>
+</head>
+<body>
+	 <!-- Video Source -->
+  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+  <section class="showcase">
+    <header>
+      <h2 class="logo">FAKE TAXI: </h2>
+      <h4 class="logo">By Ruben Dobes, Dan Hort and Filip Edlund </h4>
+      <div class="toggle"></div>
+    </header>
+    <video src="videos/backround.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Save Time And Money With: </h2> 
+      <h3>FAKE TAXI</h3>
+      <p>Hi we are free open-source website to connect people. 
+      Have you ever thought about how inefficient it is to go to work by car alone?
+      In today's world with high gas prices and a warming planet it is almost a shame.
+      And here we are! Use our website FAKE-TAXI to connect with people that are coming the same way as you! 
+
+      Save planet and time with: FAKE TAXI   
+</p>
+      <a href="login.php">Log IN</a>
+      <a href="signup.php">Register</a>
+    </div>
+    <ul class="social">
+      <li><a href="#"><img src="icons_photo/facebook.png"></a></li>
+      <li><a href="#"><img src="icons_photo/twitter.png"></a></li>
+      <li><a href="#"><img src="icons_photo/instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Destination</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <script >
+const menuToggle = document.querySelector('.toggle');
+const showcase = document.querySelector('.showcase');
+
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  showcase.classList.toggle('active');
+	  <script>
 </body>
 </html>

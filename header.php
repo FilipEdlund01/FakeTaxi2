@@ -33,6 +33,8 @@
              echo "<li><a href='profile.php'>Profile Page</a></li>";
              echo "<li><a href='logout.php'>Logout</a></li>";
              echo "<li><a href='uploadUI.php'>Upload Files</a></li>";
+             echo "<li><a href='maps.php'>Maps</a></li>";
+
              echo"<a href='newRide1.php'>
                <button type='button' class='btn btn-primary btn-circle' id='btndisclaimer'>
                <span class='glyphicon'>&#x2b;</span>

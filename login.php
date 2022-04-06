@@ -27,9 +27,10 @@
 
 
                     <div class="form-check d-flex justify-content-center mb-3"></div>
+                    <a href="userMAin.php"> 
                     <button class="btn btn-success btn-block btn-lg graduateButton text-body registerColor" style="color: white!important;" type="submit" name="submit"
-                      onclick="saveCookies()">Log in!</button>
-                      <p class="text-center text-muted mt-3 paragraphs">Don’t have an account? <a href="register-form.html" class="fw-bold text-body"><u>Register here</u></a></p>
+                      onclick="saveCookies()">Log in!</button></a>
+                      <p class="text-center text-muted mt-3 paragraphs">Don’t have an account? <a href="signup.php" class="fw-bold text-body"><u>Register here</u></a></p>
                   </form>
                 </div>
               </div>
@@ -47,10 +48,17 @@
     if (isset($_GET["error"])) {
       if ($_GET["error"] == "emptyinput") {
         echo "<p>Fill in all fields!</p>";
+        $alert = "<script>alert('Fill in all fields!');</script>";
+        echo $alert;
       }
       else if ($_GET["error"] == "wronglogin") {
         echo "<p>Wrong login!</p>";
+        $alert = "<script>alert('Wrong login!(wrong username or password)');</script>";
+        echo $alert;
       }
+    }else{
+      $alert = "<script>alert('You are loged in!');</script>";
+        echo $alert;
     }
   ?>
 </section>
