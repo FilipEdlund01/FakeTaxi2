@@ -25,7 +25,7 @@
         <ul>
          
        
-          <li><a href="discover.php">About Us</a></li>
+          <li><a href="aboutus.php">About Us</a></li>
    
           <?php
             if (isset($_SESSION["useruid"])) {
