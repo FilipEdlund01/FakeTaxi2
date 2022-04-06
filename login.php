@@ -15,13 +15,13 @@
                   <form action="includes/login.inc.php" method="post" >
 
                     <div class="form-outline mb-3">
+                    <label class="form-label paragraphs" for="registerForm1">Username or Email</label>
                       <input type="text" id="name" class="form-control form-control-lg" name="uid" />
-                      <label class="form-label paragraphs" for="registerForm1">Username or Email</label>
                     </div>
 
                     <div class="form-outline mb-3">
+                    <label class="form-label paragraphs" for="registerForm4">Password</label>
                       <input type="password" id="password" class="form-control form-control-lg" name="pwd" />
-                      <label class="form-label paragraphs" for="registerForm4">Password</label>
                     </div>
 
 

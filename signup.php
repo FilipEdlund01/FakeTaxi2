@@ -21,24 +21,24 @@
                     </div>
 
                     <div class="form-outline mb-3">
+                    <label class="form-label paragraphs" for="registerForm2">Email</label>
                       <input type="email" id="email" class="form-control form-control-lg" name="email" />
-                      <label class="form-label paragraphs" for="registerForm2">Email</label>
                     </div>
 
                     <div class="form-outline mb-3">
+                    <label class="form-label paragraphs" for="registerForm3">Username</label>
                       <input type="text" id="user" class="form-control form-control-lg" name="uid" />
-                      <label class="form-label paragraphs" for="registerForm3">Username</label>
                     </div>
 
                     <div class="form-outline mb-3">
+                    <label class="form-label paragraphs" for="registerForm4">Password</label>
                       <input type="password" id="password" class="form-control form-control-lg" name="pwd" />
-                      <label class="form-label paragraphs" for="registerForm4">Password</label>
                     </div>
 
                     <div class="form-outline mb-2">
+                    <label class="form-label paragraphs" for="registerForm5">Repeat your password</label>
                       <input type="password" id="password_repeated" class="form-control form-control-lg"
                         name="pwdrepeat" />
-                      <label class="form-label paragraphs" for="registerForm5">Repeat your password</label>
                     </div>
 
                     <div class="form-check d-flex justify-content-center mb-3"></div>
