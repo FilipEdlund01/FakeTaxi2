@@ -14,21 +14,21 @@
   <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
   <section class="showcase">
     <header>
-      <h2 class="logo">FAKE TAXI: </h2>
-      <h4 class="logo">By Ruben Dobes, Dan Hort and Filip Edlund </h4>
+      <h2 class="logo">FAKE-TAXI: </h2>
+      <h4 class="logo">By Ruben Dobes, Daniel Hort and Filip Edlund </h4>
       <div class="toggle"></div>
     </header>
     <video src="videos/backround.mp4" muted loop autoplay></video>
     <div class="overlay"></div>
     <div class="text">
       <h2>Save Time And Money With: </h2> 
-      <h3>FAKE TAXI</h3>
+      <h3>FAKE-TAXI</h3>
       <p>Hi we are free open-source website to connect people. 
       Have you ever thought about how inefficient it is to go to work by car alone?
       In today's world with high gas prices and a warming planet it is almost a shame.
       And here we are! Use our website FAKE-TAXI to connect with people that are coming the same way as you! 
 
-      Save planet and time with: FAKE TAXI   
+      Save planet and time with: FAKE-TAXI   
 </p>
       <a href="login.php">Log IN</a>
       <a href="signup.php">Register</a>
