@@ -15,13 +15,6 @@
                   <form action="upload_files.php" method="POST" enctype="multipart/form-data">
 
                       <input type="file" id="file"  name="file" />
-                     
-                    
-
-
-
-
-
                     
                     <button href="userMain.php" type="submit" name="submit"
                       >Upload Files</button>
