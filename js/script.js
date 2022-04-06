@@ -46,6 +46,7 @@ function generateTableHistory(name) {
    ]
      let div = document.createElement("div");
      div.setAttribute("class", "card mt-4");
+     div.setAttribute("style", "overflow-x:auto;")
      div.setAttribute("id", "divID");
 
      let header = document.createElement("h3");
