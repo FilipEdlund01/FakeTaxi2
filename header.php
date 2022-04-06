@@ -22,14 +22,16 @@
       <div class="wrapper" id="navDiv">
         <a href="userMain.php"></a>
         <ul>
-          <li><a href="userMain.php">Home</a></li>
+         
           <li><a href="discover.php">About Us</a></li>
           <li><a href="newRide1.php">Find Route</a></li>
           <li><a href="uploadUI.php">Upload Info About You</a></li>
           <?php
             if (isset($_SESSION["useruid"])) {
+            
              echo "<li><a href='profile.php'>Profile Page</a></li>";
              echo "<li><a href='logout.php'>Logout</a></li>";
+
               
             }
             else {
