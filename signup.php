@@ -49,6 +49,11 @@
                       <a href="login.php" class="fw-bold text-body"><u>Login here</u></a>
                     </p>
                   </form>
+
+                  <p class="text-center text-muted mt-3 mb-0">
+                      Forgot your password?
+                      <a href="reset-password.php" class="fw-bold text-body"><u>Click here!</u></a>
+            
                 </div>
               </div>
             </div>
