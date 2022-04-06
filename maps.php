@@ -33,11 +33,6 @@
 
 <button type="submit" name="submit" href="index.php">Send Location</button>
 
-
-
-
-   
-
   </form>
 
   <div onload="initializeMaps()" id="map"></div>
