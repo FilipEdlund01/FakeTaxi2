@@ -19,8 +19,8 @@
                     <button href="userMain.php" type="submit" name="submit"
                       >Upload Files</button>
 
-                      <p class="text-center text-muted mt-3 paragraphs">Don’t have an account? 
-                          <a href="register-form.html" class="fw-bold text-body"><u>Register here</u></a></p>
+                      <p class="text-center text-muted mt-3 paragraphs" href="signup.php">Don’t have an account? 
+                          <a href="signup.php" class="fw-bold text-body"><u>Register here</u></a></p>
                   </form>
                 </div>
               </div>
