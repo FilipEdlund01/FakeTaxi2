@@ -8,10 +8,11 @@
 </section>
 <body onload="initialize1()" class="indexBackground">
 
+		
+			<div class="container align-items-center">
 			<div class="p-5">
-				<h2 class="text-uppercase text-center" style="color: black;">Ride history:</h2>
+				<h2 class="text-uppercase text-center headings">Ride history:</h2>
 			</div>
-			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-12 col-lg-8" id="usermainDiv">
 					</div>
@@ -36,7 +37,7 @@ $sql = "SELECT * FROM users";
 $result =$conn->query($sql);
 if($result->num_rows >0){
 while($row = $result-> fetch_assoc()){
-    echo "<tr><td>" .$row["usersId"]. "</td><td>" .$row["usersName"]. "</td><td>" .$row["usersEmail"]. "</td></tr>";
+    //echo "<tr><td>" .$row["usersId"]. "</td><td>" .$row["usersName"]. "</td><td>" .$row["usersEmail"]. "</td></tr>";
 
 }
 }else{

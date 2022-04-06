@@ -34,8 +34,9 @@
               
             }
             else {
+              echo "<li><a href='signup.php'>Sign up</a></li>";
+              echo "<li><a href='login.php'>Log in</a></li>";
 
-              
 
             }
             ?>
@@ -43,12 +44,10 @@
       </div>
       
     </nav>
-    <div class="d-flex col-xs-3 col-sm-6 col-md-8 col-lg-10" style="">
     <div class="d-flex col-xs-3 col-sm-6 col-md-8 col-lg-10" style="justify-content:center;">
 					<a href="newRide1.php">
 						<button type="button" class="btn btn-primary btn-circle" id="btndisclaimer">
 							<span class="glyphicon">&#x2b;</span>
-							<span class="glyphicon">New Ride</span>
 						</button>
 					</a>
 
