@@ -24,13 +24,20 @@
         <a href="userMain.php"></a>
         <ul>
          
-          <li><a href="userMain.php">Home</a></li>
+       
           <li><a href="discover.php">About Us</a></li>
    
           <?php
             if (isset($_SESSION["useruid"])) {
+             echo "<li><a href='userMain.php'>Home</a></li>";
              echo "<li><a href='profile.php'>Profile Page</a></li>";
              echo "<li><a href='logout.php'>Logout</a></li>";
+             echo "<li><a href='uploadUI.php'>Upload Files</a></li>";
+             echo"<a href='newRide1.php'>
+               <button type='button' class='btn btn-primary btn-circle' id='btndisclaimer'>
+               <span class='glyphicon'>&#x2b;</span>
+             </button>
+           </a>";
               
             }
             else {
@@ -44,10 +51,6 @@
       </div>
       
     </nav>
-    <div class="d-flex col-xs-3 col-sm-6 col-md-8 col-lg-10" style="justify-content:center;">
-					<a href="newRide1.php">
-						<button type="button" class="btn btn-primary btn-circle" id="btndisclaimer">
-							<span class="glyphicon">&#x2b;</span>
-						</button>
-					</a>
+  
+
 
