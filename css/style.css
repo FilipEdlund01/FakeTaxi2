@@ -15,12 +15,33 @@
 }
 .headings {
   color: black; 
+  font-size: 35px;  
+}
+.sizing {
+  width: 200px;
+  height: 50px;
+
+}
+.mainHeadingMap {
+  margin-left: 50px;
+  margin-right: 50px;
+  color: white; 
   font-size: 35px;
+}
+
+.headings2 {
+  color: white; 
+  font-size: 25px;
 }
 
 .paragraphs {
   color: black;
   font-size: 15px;
+}
+
+.paragraphsMaps {
+  color: white;
+  font-size: 20px;
 }
 
 .paragraphsExtra {
@@ -45,7 +66,7 @@ width: 100%;
 }
 
 #navDiv {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .graduateButton, .navID {
   color: white!important;
@@ -190,7 +211,6 @@ body {
   display: inline;
   float: right;
   font-size: 18px;
-  margin-left: 20px;
 }
 ul li a{
   display: block;
@@ -200,17 +220,18 @@ ul li a{
   font-size: 18px;
   text-decoration: none;
 }
-.nav > .nav-links > ul{
+ ul{
   padding: 0;
   margin-top: 5px;
   list-style: none;
   position: relative;
-  margin-left: 50px;
+  margin-left: 20px;
 }
 ul li{
   display: inline-block;
   background-color: blue;
-  margin-left: 20px;
+  margin-left: 10px;
+  border-radius: 15px;
 }
 ul li:hover{
     background-color: #0b65af;
