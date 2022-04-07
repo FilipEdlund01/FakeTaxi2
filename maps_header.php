@@ -32,7 +32,7 @@
   </head>
   <body>
 
-    <!--A quick navigation-->
+    
     <nav>
       <div class="wrapper">
         <a href="index.php"><img src="img/logo-white.png" alt="Blogs logo"></a>

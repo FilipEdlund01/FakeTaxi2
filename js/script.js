@@ -1,12 +1,12 @@
-// Change nav menu color if on that page!
+
 let pageUrl = window.location.pathname;
 let getNav = document.querySelectorAll("nav div ul li a");
 
 for (let i = 0; i < getNav.length; i++) {
-  // Get URL info
+
   let pageUrlName = pageUrl.split("/");
   let pageUrlLength = pageUrlName.length - 1;
-  // Get links info
+
   let pageNav = getNav[i].pathname;
   let pageNavName = pageNav.split("/");
   let pageNavLength = pageNavName.length - 1;
@@ -73,7 +73,7 @@ function generateTableHistory(name) {
      })
      table.appendChild(tbody);
      div.appendChild(header);
-     
+
      div.appendChild(table);
      parent.appendChild(div);
 }
@@ -131,7 +131,7 @@ try {
   let url = new URL(imageUrl);
    frame.add( new JLabel( new ImageIcon( new ImageIcon(url).getImage().getScaledInstance( 630, 600, java.awt.Image.SCALE_SMOOTH ) ) ) );
 
-   /* Second set to test if same map can display multiple markers */   
+
    let imageUrl2 = "http://maps.googleapis.com/maps/api/staticmap?zoom=18&size=800x800&markers=44.10253392,-81.14871575&sensor=true";
    let url2 = new URL(imageUrl2);
    frame.add( new JLabel( new ImageIcon( new ImageIcon(url2).getImage().getScaledInstance( 630, 600, java.awt.Image.SCALE_SMOOTH ) ) ) );

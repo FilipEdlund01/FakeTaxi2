@@ -10,8 +10,7 @@
 	<title>Main Page</title>
 </head>
 <body>
-	 <!-- Video Source -->
-  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+
   <section class="showcase">
     <header>
       <h2 class="logo">FAKE-TAXI: </h2>
@@ -19,7 +18,7 @@
       <div class="toggle"></div>
     </header>
     <video src="videos/background.mp4" muted loop autoplay></video>
-    
+
     <div class="overlay"></div>
     <div class="text">
       <h2>Save Time And Money With: </h2> 

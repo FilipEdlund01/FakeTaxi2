@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8">
     <title>PHP Project 01</title>
-    <!--I won't do more than barebone HTML, since this isn't an HTML tutorial.-->
+    
   <link rel="stylesheet" href="css/style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
@@ -17,11 +17,11 @@
   <script defer src="check.js"></script>
 </head>
 
-    <!--A quick navigation-->
+
     <nav>
       
       <div class="wrapper" id="navDiv">
-        
+
         <a href="userMain.php"></a>
         <ul>
          

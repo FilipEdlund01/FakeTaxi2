@@ -2,7 +2,7 @@
 
 if (isset($_POST["submit"])) {
 
-  // First we get the form data from the URL
+ //data z url 
   $latitude = $_POST["latitude"];
   $longitude = $_POST["longitude"];
 
@@ -14,11 +14,11 @@ if (isset($_POST["submit"])) {
 
   if (emptyInputMaps($latitude, $longitude) === true) {
     header("location: ../maps.php?error=emptyinput");
-    
+
 		exit();
   }
 
-  // Now we insert the user into the database
+  
   pasteLocation($conn, $latitude, $longitude);
 
 } else {

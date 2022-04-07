@@ -1,13 +1,13 @@
 .indexBackground {
-  background: #74ebd5;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #74ebd5;  
+  background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  
+  background: linear-gradient(to right, #ACB6E5, #74ebd5); 
 }
 
 .usermainBackground {
-  background: #ef32d9; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ef32d9, #89fffd); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ef32d9, #89fffd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ef32d9; 
+  background: -webkit-linear-gradient(to right, #ef32d9, #89fffd); 
+  background: linear-gradient(to right, #ef32d9, #89fffd); 
 }
 .headingIndex {
   color: white; 
@@ -67,7 +67,7 @@ width: 100%;
       height: 130px;
       width: 130px;
       border-radius: 250px;
-      
+
       font-size: 60px;
     }
 
