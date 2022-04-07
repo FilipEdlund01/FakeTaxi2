@@ -153,5 +153,27 @@ function pasteLocation($conn, $latitude, $longitude) {
 	  exit();
   }
 
+    // vložení datumu času mobilu 
+
+  function pasteNewRide($conn, $time, $date, $phone) {
+	$sql = "INSERT INTO newride (time, date ,phone) VALUES (?, ?, ?);";
+	
+  
+	  $stmt = mysqli_stmt_init($conn);
+	  if (!mysqli_stmt_prepare($stmt, $sql)) {
+		   header("location: ../newRide1.php?error=stmtfailed");
+		  exit();
+	  }
+  
+	  
+  
+	  mysqli_stmt_bind_param($stmt, "sss", $time, $date, $phone);
+	  mysqli_stmt_execute($stmt);
+	  mysqli_stmt_close($stmt);
+	  mysqli_close($conn);
+	  header("location: ../newRide1.php?error=none");
+	  exit();
+  }
+
 
 

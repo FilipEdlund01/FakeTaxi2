@@ -17,30 +17,42 @@
 			  <div class="card-body p-5">
 				<h2 class="text-uppercase text-center mb-3 headings">New Ride</h2>
   
-				<form action="send_data.php" method="post">
+				<form action="includes/newRide.inc.php" method="post">
   
 				  <div class="form-outline mb-3">
+				  <label class="form-label paragraphs" for="newRideForm1" >Time</label>
 					<input type="time" id="newRideForm1" class="form-control form-control-lg" name="time" required="required"/>
-					<label class="form-label paragraphs" for="newRideForm1" >Time</label>
+					
 				  </div>
 				  
 				  <div class="form-outline mb-3">
+				  <label class="form-label paragraphs" for="newRideForm2">Date</label>
 					<input type="date" id="newRideForm2" class="form-control form-control-lg" name="date" required="required"/>
-					<label class="form-label paragraphs" for="newRideForm2">Date</label>
+					
 				  </div>
 
 				  <div class="form-outline mb-3">
-					<input type="tel" id="newRideForm3" class="form-control form-control-lg" name="phone" required="required"/>
-					<label class="form-label paragraphs" for="newRideForm3">Phone Number</label>
-				  </div>
-				  <a href="newRide2.php"
-				  		type="submit"
+
+				  <label class="form-label paragraphs" for="newRideForm3">Phone Number</label>
+				  <input type="text" id="newRideForm3" class="form-control form-control-lg" name="phone" required="required"/>
+				  <button class="btn btn-success btn-block btn-lg graduateButton text-body registerColor" style="color: white!important;" type="submit" name="submit"
+                      >Send Data</button>
+
+					  <a href="maps.php"
+				  		
                         class="btn btn-success btn-block btn-lg graduateButton text-body registerColor"
-                        style="color: white !important"
-                        onclick="saveCookies()"
+						style="color: white!important;"
+                      
+                      
                       >
-						Choose Location
+						Go To Map
 				</a>
+
+				  </div>
+				 
+
+
+
 				</form>
   
 			  </div>
