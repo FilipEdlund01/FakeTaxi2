@@ -32,7 +32,7 @@
                 <h2 class="text-uppercase text-center mb-3 headings">Filip Edlund</h2>
                 <img src="authors-img/filip.jpg" class="images">
                   <p class="text-center text-muted mt-3">
-                    Rodák z Horoměřic se švédskými kořeny je jedním z nejobávanějších programátorů na Gymnáziu Arabská. Jeho programátorské smysly se vyjímají mezi ostatními z třídy 3.E. Na obrázku ho můžete vidět, jak svýma vlastníma rukama chytil rybu.
+                    Native from Horoměřice with some Swedish roots is one of the most knowing programmer on Gymnázium Arabská. His programming senses are on the next level among 3.E students. He can catch a fish using his own hands, as you can see on the picture.
                 </div>
               </div>
             </div>

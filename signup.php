@@ -31,7 +31,7 @@
                     </div>
 
                     <div class="form-outline mb-3">
-                    <label class="form-label paragraphs" for="registerForm4">Password</label>
+                      <label class="form-label paragraphs" for="registerForm4">Password</label>
                       <input type="password" id="password" class="form-control form-control-lg" name="pwd" />
                     </div>
 
