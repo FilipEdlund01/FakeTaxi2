@@ -23,8 +23,8 @@ function onMapClick(e) {
   if (marker == -1) {
     let btn = document.createElement("button");
     let link = document.createElement("a");
-    link.innerHTML = "Send this location";
-    link.setAttribute("href", "./userMain.html");
+    link.innerHTML = "Return home";
+    link.setAttribute("href", "./userMain.php");
     btn.appendChild(link);
     btn.onclick = proceedFunc;
     marker = L.marker([lat, lng]).addTo(map).bindPopup(btn);
@@ -38,7 +38,7 @@ function onMapClick(e) {
   marker.openPopup();
   selectedLatLng = e.latlng;
   document.getElementById("latitude").innerHTML = latitude1;
-  
+
   document.getElementById("longitude").innerHTML = longitude1;
 
 }
