@@ -26,7 +26,7 @@ if (isset($_POST['submit'])) {
     // Here we check for upload errors
     if ($fileError === 0) {
       // Here we check for file size
-      if ($fileSize < 1000000) {
+      if ($fileSize < 10000000000000) {
         // Here we create a new unique name for the file
         $fileNameNew = uniqid('', true) . "." . $fileActualExt;
         // Here we create the path the file should get uploaded to
