@@ -32,7 +32,6 @@
              echo "<li><a href='maps.php'>Maps</a></li>";
              echo "<li><a href='uploadUI.php'>Upload Files</a></li>";
              echo "<li><a href='aboutus.php'>About Us</a></li>";
-             echo "<li><a href='aboutus.php'>Show all users.</a></li>";           
              echo "<li><a href='logout.php'>Logout</a></li>";
             
            
