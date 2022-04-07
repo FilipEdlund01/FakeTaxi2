@@ -40,11 +40,8 @@
 <a class="btn btn-success btn-block btn-lg graduateButton text-body mb-3 sizing" type="submit" name="submit" href="userMain.php">Send Location</a>
 
   </form>
-  <a href='userMain.php'>
-        <button class="btn btn-success btn-block btn-lg graduateButton text-body sizing">
-            Return Home
+        <button class="btn btn-success btn-block btn-lg graduateButton text-body sizing"><a href='userMain.php'>Return Home</a>
         </button>
-    </a>
 </div>
     </div>
   <div onload="initializeMaps()" id="map"></div>
