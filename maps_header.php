@@ -8,10 +8,9 @@
   <head>
     <meta charset="utf-8">
     <title>Fake Taxi</title>
-    <!--I won't do more than barebone HTML, since this isn't an HTML tutorial.-->
   
-    <! link rel="stylesheet" href="css/reset.css">
-    <! link rel="stylesheet" href="css/style.css">
+  
+
 
     <meta charset="utf-8" />
   <link rel="stylesheet" href="styles.css" />

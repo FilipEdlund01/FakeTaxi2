@@ -48,7 +48,7 @@
   <div onload="initializeMaps()" id="map"></div>
 
   <?php
-    // Error messages
+  
     if (isset($_GET["error"])) {
       if ($_GET["error"] == "emptyinput") {
         echo "<p>You didnt filled the label/s </p>";

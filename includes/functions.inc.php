@@ -1,6 +1,6 @@
 <?php
 
-// Check for empty input signup
+
 function emptyInputSignup($name, $email, $username, $pwd, $pwdRepeat) {
 	$result;
 	if (empty($name) || empty($email) || empty($username) || empty($pwd) || empty($pwdRepeat)) {
@@ -12,7 +12,6 @@ function emptyInputSignup($name, $email, $username, $pwd, $pwdRepeat) {
 	return $result;
 }
 
-// Check invalid username
 function invalidUid($username) {
 	$result;
 	if (!preg_match("/^[a-zA-Z0-9]*$/", $username)) {
@@ -24,7 +23,6 @@ function invalidUid($username) {
 	return $result;
 }
 
-// Check invalid email
 function invalidEmail($email) {
 	$result;
 	if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -36,7 +34,6 @@ function invalidEmail($email) {
 	return $result;
 }
 
-// Check if passwords matches
 function pwdMatch($pwd, $pwdrepeat) {
 	$result;
 	if ($pwd !== $pwdrepeat) {
@@ -46,9 +43,7 @@ function pwdMatch($pwd, $pwdrepeat) {
 		$result = false;
 	}
 	return $result;
-}
 
-// Check if username is in database, if so then return data
 function uidExists($conn, $username) {
   $sql = "SELECT * FROM users WHERE usersUid = ? OR usersEmail = ?;";
 	$stmt = mysqli_stmt_init($conn);
@@ -60,7 +55,6 @@ function uidExists($conn, $username) {
 	mysqli_stmt_bind_param($stmt, "ss", $username, $username);
 	mysqli_stmt_execute($stmt);
 
-	// "Get result" returns the results from a prepared statement
 	$resultData = mysqli_stmt_get_result($stmt);
 
 	if ($row = mysqli_fetch_assoc($resultData)) {
@@ -74,7 +68,7 @@ function uidExists($conn, $username) {
 	mysqli_stmt_close($stmt);
 }
 
-// Insert new user into database
+
 function createUser($conn, $name, $email, $username, $pwd) {
   $sql = "INSERT INTO users (usersName, usersEmail, usersUid, usersPwd) VALUES (?, ?, ?, ?);";
 
@@ -94,7 +88,6 @@ function createUser($conn, $name, $email, $username, $pwd) {
 	exit();
 }
 
-// Check for empty input login
 function emptyInputLogin($username, $pwd) {
 	$result;
 	if (empty($username) || empty($pwd)) {
@@ -106,7 +99,7 @@ function emptyInputLogin($username, $pwd) {
 	return $result;
 }
 
-// Log user into website
+
 function loginUser($conn, $username, $pwd) {
 	$uidExists = uidExists($conn, $username);
 
@@ -131,7 +124,7 @@ function loginUser($conn, $username, $pwd) {
 	}
 }
 
-// vlozeni polohy do databaze
+
 
 function pasteLocation($conn, $latitude, $longitude) {
 	$sql = "INSERT INTO location (latitude, longitude) VALUES (?, ?);";
@@ -152,8 +145,7 @@ function pasteLocation($conn, $latitude, $longitude) {
 	  header("location: ../maps.php?error=none");
 	  exit();
   }
-
-    // vložení datumu času mobilu 
+ 
 
   function pasteNewRide($conn, $time, $date, $phone) {
 	$sql = "INSERT INTO newride (time, date ,phone) VALUES (?, ?, ?);";
