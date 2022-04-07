@@ -12,6 +12,7 @@ function emptyInputSignup($name, $email, $username, $pwd, $pwdRepeat) {
 	return $result;
 }
 
+
 function invalidUid($username) {
 	$result;
 	if (!preg_match("/^[a-zA-Z0-9]*$/", $username)) {
@@ -22,6 +23,7 @@ function invalidUid($username) {
 	}
 	return $result;
 }
+
 
 function invalidEmail($email) {
 	$result;
@@ -34,6 +36,7 @@ function invalidEmail($email) {
 	return $result;
 }
 
+
 function pwdMatch($pwd, $pwdrepeat) {
 	$result;
 	if ($pwd !== $pwdrepeat) {
@@ -43,6 +46,8 @@ function pwdMatch($pwd, $pwdrepeat) {
 		$result = false;
 	}
 	return $result;
+}
+
 
 function uidExists($conn, $username) {
   $sql = "SELECT * FROM users WHERE usersUid = ? OR usersEmail = ?;";
@@ -125,7 +130,6 @@ function loginUser($conn, $username, $pwd) {
 }
 
 
-
 function pasteLocation($conn, $latitude, $longitude) {
 	$sql = "INSERT INTO location (latitude, longitude) VALUES (?, ?);";
 	
@@ -145,6 +149,7 @@ function pasteLocation($conn, $latitude, $longitude) {
 	  header("location: ../maps.php?error=none");
 	  exit();
   }
+
  
 
   function pasteNewRide($conn, $time, $date, $phone) {
