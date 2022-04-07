@@ -11,7 +11,7 @@ There are some important things before you start this project. First if you want
 Second thing you must do is to create a database that is called  taxidb     . Write it exactly like that.
 
 Third thing you must do is to import tables into the database. The tables are in the folder “ tabels-PhpMyAdmin ”. Then go to PhpMyAdmin and import the tables into database  taxidb   .
-
+Also you can import the whole database from folder whole-database 
 Also you can use these commands to generate the tables: 
 
 CREATE TABLE `users` (
