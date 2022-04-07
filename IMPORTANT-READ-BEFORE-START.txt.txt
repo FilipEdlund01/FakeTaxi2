@@ -1,0 +1,83 @@
+Please read this before running the project! 
+
+If the server is running you can open our website through this ip address: 
+
+78.45.50.18:5100
+
+Hi this is our  project that we have made with Ruben Dobes, Daniel Hort and Filip Edlund
+
+There are some important things before you start this project. First if you want to test and run this project on your PC you must make localhost web hosting. We were using XAMMP but that doesn't matter. You can use any app that is providing the same services as XAMMP. 
+
+Second thing you must do is to create a database that is called  taxidb     . Write it exactly like that.
+
+Third thing you must do is to import tables into the database. The tables are in the folder “ tabels-PhpMyAdmin ”. Then go to PhpMyAdmin and import the tables into database  taxidb   .
+
+Also you can use these commands to generate the tables: 
+
+CREATE TABLE `users` (
+  `usersId` int(11) NOT NULL AUTO_INCREMENT,
+  `usersName` varchar(128) NOT NULL,
+  `usersEmail` varchar(128) NOT NULL,
+  `usersUid` varchar(128) NOT NULL,
+  `usersPwd` varchar(128) NOT NULL,
+  PRIMARY KEY (`usersId`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4
+
+
+CREATE TABLE `newride` (
+  `id` int(50) NOT NULL AUTO_INCREMENT,
+  `time` varchar(50) NOT NULL,
+  `date` varchar(50) NOT NULL,
+  `phone` int(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4
+
+
+CREATE TABLE `location` (  `latitude` varchar(50) NOT NULL,  `longitude` varchar(50) NOT NULL ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+
+
+Setup your connection:
+Now a very important thing to do. If you have your local host server setted like this it is everything alright.
+$servername = "localhost";
+$dBUsername = "root";
+$dBPassword = "";
+$dBName = "taxidb";
+
+
+That means that you don't have a password and your username is root. 
+
+But if you have your own password  username or server_name: 
+
+You must go to the folder includes. Then go to file dbh.inc.php where you must change the variables to your username and password or server_name. 
+
+$servername = "localhost";
+$dBUsername = "root";
+$dBPassword = "";
+$dBName = "taxidb";
+
+
+Also you must change the connection variables in file userMain.php. On row 36 in this file is this code:
+
+$conn = mysqli_connect("localhost","root","","taxidb");
+
+So please change this. 
+
+
+If you are using XAMPP.
+Please in your xampp folder go to folder htdocs and there extract the zip you will download.
+
+For example my path look like this:
+
+C:\Users\edlun\Downloads\K\htdocs\Rocnikovka-fake-taxi\fake-taxi\fake-taxi
+
+
+Then if you want to open the project start the Apache and MySQL module. 
+
+In the apache row click admin and go to the folder where your project is saved. Then it should open the index file of our project and hallelujah  you are in. 
+
+
+
+
+  
+
+   	
