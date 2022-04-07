@@ -38,8 +38,10 @@ function onMapClick(e) {
   marker.openPopup();
   selectedLatLng = e.latlng;
   document.getElementById("latitude").innerHTML = latitude1;
+  
   document.getElementById("longitude").innerHTML = longitude1;
 
 }
+
 
 map.on("click", onMapClick);
