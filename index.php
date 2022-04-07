@@ -19,6 +19,7 @@
       <div class="toggle"></div>
     </header>
     <video src="videos/background.mp4" muted loop autoplay></video>
+    
     <div class="overlay"></div>
     <div class="text">
       <h2>Save Time And Money With: </h2> 

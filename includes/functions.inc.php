@@ -168,6 +168,7 @@ function pasteLocation($conn, $latitude, $longitude) {
 	  mysqli_stmt_execute($stmt);
 	  mysqli_stmt_close($stmt);
 	  mysqli_close($conn);
+	  
 	  header("location: ../newRide1.php?error=none");
 	  exit();
   }

@@ -22,6 +22,7 @@ if (isset($_POST["submit"])) {
 
   // Now we insert the user into the database
   loginUser($conn, $username, $pwd);
+  
 
 } else {
 	header("location: ../login.php");

@@ -14,6 +14,7 @@ if (isset($_POST["submit"])) {
 
   if (emptyInputMaps($latitude, $longitude) === true) {
     header("location: ../maps.php?error=emptyinput");
+    
 		exit();
   }
 

@@ -31,6 +31,7 @@ if (isset($_POST['submit'])) {
         $fileNameNew = uniqid('', true) . "." . $fileActualExt;
         // Here we create the path the file should get uploaded to
         $fileDestination = 'uploaded-files/' . $fileNameNew;
+        
         // Now we upload the file!
         move_uploaded_file($fileTmpName, $fileDestination);
         $alert = "<script>alert('You sucesfully add your file to database!');</script>";

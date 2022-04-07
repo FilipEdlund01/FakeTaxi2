@@ -3,5 +3,6 @@
 </html>
 
 <script src="js/script.js"></script>
+
 <script src="js/maps.js"></script>
 

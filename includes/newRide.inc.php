@@ -18,6 +18,7 @@ if (isset($_POST["submit"])) {
 
   // Now we insert the user into the database
   pasteNewRide($conn, $time, $date, $phone);
+  
 
 } else {
 	header("location: ../newRide1.php");

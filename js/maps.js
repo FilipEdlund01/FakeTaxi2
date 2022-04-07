@@ -28,6 +28,7 @@ function onMapClick(e) {
     btn.appendChild(link);
     btn.onclick = proceedFunc;
     marker = L.marker([lat, lng]).addTo(map).bindPopup(btn);
+    
   }
   marker.setLatLng(e.latlng);
   console.log(e.latlng);

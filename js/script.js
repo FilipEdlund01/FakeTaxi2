@@ -73,6 +73,7 @@ function generateTableHistory(name) {
      })
      table.appendChild(tbody);
      div.appendChild(header);
+     
      div.appendChild(table);
      parent.appendChild(div);
 }

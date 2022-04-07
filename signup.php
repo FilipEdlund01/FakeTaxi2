@@ -9,6 +9,7 @@
       <div class="container h-100 p-5">
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+            
             <div class="card" style="background-color:white;">
               <div class="card-body p-5">
                 <h2 class="text-uppercase text-center mb-3 headings">Register</h2>
