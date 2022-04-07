@@ -12,8 +12,13 @@
 
 <body>
 
-  <p> Current latitude <span id="latitude1"></span>.</p>
-  <p> Current longitude <span id="longitude1"></span>.</p>
+  <h1> Please if you want to send location copy the current latitude and logitude to the labels below and click Send Location.</h1>
+  <h2>To see the longitude and latitude yoou must click on map first</h2>
+  <h3>Thank you. FAKE-TAXI team.</h3>
+    
+
+  <p> Current latitude <span id="latitude"></span>.</p>
+  <p> Current longitude <span id="longitude"></span>.</p>
 
   <form action="includes/location.inc.php" method="post" id="form">
 
@@ -34,10 +39,33 @@
 <button type="submit" name="submit" href="index.php">Send Location</button>
 
   </form>
+  <a href='userMain.php'>
+        <button class="GFG">
+            Return Home
+        </button>
+    </a>
 
   <div onload="initializeMaps()" id="map"></div>
+
+  <?php
+    // Error messages
+    if (isset($_GET["error"])) {
+      if ($_GET["error"] == "emptyinput") {
+        echo "<p>You didnt filled the label/s </p>";
+        $alert = "<script>alert('You didnt filled the label/s!');</script>";
+        echo $alert;
+      }
+
+    }else{
+      $alert = "<script>alert('You have send your destination location!');</script>";
+        echo $alert;
+    }
+  ?>
 </body>
-<script src= "js/maps.js"></script>
+<script src= "js/maps.js">
+
+ 
+</script>
 
 </html>
 

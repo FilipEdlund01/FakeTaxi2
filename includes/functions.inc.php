@@ -175,5 +175,16 @@ function pasteLocation($conn, $latitude, $longitude) {
 	  exit();
   }
 
+  function emptyInputMaps($lat, $lng) {
+	$result;
+	if (empty($lat) || empty($lng)) {
+		$result = true;
+	}
+	else {
+		$result = false;
+	}
+	return $result;
+}
+
 
 

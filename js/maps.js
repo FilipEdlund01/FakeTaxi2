@@ -33,8 +33,13 @@ function onMapClick(e) {
   console.log(e.latlng);
   console.log(e.latlng['lat']);
   latitude1 = e.latlng['lat'];
+  longitude1 = e.latlng['lng'];
+
   marker.openPopup();
   selectedLatLng = e.latlng;
+  document.getElementById("latitude").innerHTML = latitude1;
+  document.getElementById("longitude").innerHTML = longitude1;
+
 }
 
 map.on("click", onMapClick);
