@@ -18,7 +18,7 @@
       <h4 class="logo">By Ruben Dobes, Daniel Hort and Filip Edlund </h4>
       <div class="toggle"></div>
     </header>
-    <video src="videos/backround.mp4" muted loop autoplay></video>
+    <video src="videos/background.mp4" muted loop autoplay></video>
     <div class="overlay"></div>
     <div class="text">
       <h2>Save Time And Money With: </h2> 
