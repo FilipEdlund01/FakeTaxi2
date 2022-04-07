@@ -126,7 +126,7 @@ function loginUser($conn, $username, $pwd) {
 		session_start();
 		$_SESSION["userid"] = $uidExists["usersId"];
 		$_SESSION["useruid"] = $uidExists["usersUid"];
-		header("location: ../index.php?error=none");
+		header("location: ../userMain.php?error=none");
 		exit();
 	}
 }
@@ -135,20 +135,21 @@ function loginUser($conn, $username, $pwd) {
 
 function pasteLocation($conn, $latitude, $longitude) {
 	$sql = "INSERT INTO location (latitude, longitude) VALUES (?, ?);";
+	
   
 	  $stmt = mysqli_stmt_init($conn);
 	  if (!mysqli_stmt_prepare($stmt, $sql)) {
-		   header("location: ../signup.php?error=stmtfailed");
+		   header("location: ../maps.php?error=stmtfailed");
 		  exit();
 	  }
   
 	  
   
-	  mysqli_stmt_bind_param($stmt, "ssss", $latitude, $longitude);
+	  mysqli_stmt_bind_param($stmt, "ss", $latitude, $longitude);
 	  mysqli_stmt_execute($stmt);
 	  mysqli_stmt_close($stmt);
 	  mysqli_close($conn);
-	  header("location: ../signup.php?error=none");
+	  header("location: ../maps.php?error=none");
 	  exit();
   }
 

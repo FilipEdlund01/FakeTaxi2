@@ -25,11 +25,12 @@
         <ul>
          
        
-          <li><a href="aboutus.php">About Us</a></li>
-   
+          
           <?php
             if (isset($_SESSION["useruid"])) {
              echo "<li><a href='userMain.php'>Home</a></li>";
+            echo "<li><a href='aboutus.php'>About Us</a></li>";
+   
              echo "<li><a href='profile.php'>Profile Page</a></li>";
              echo "<li><a href='logout.php'>Logout</a></li>";
              echo "<li><a href='uploadUI.php'>Upload Files</a></li>";
