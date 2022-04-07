@@ -22,22 +22,18 @@ for (let i = 0; i < getNav.length; i++) {
 }
 
 
-
+//Generování tabulek v userMain
 function initialize1() {
   for (let index = 0; index < 8; index++) {
   generateTableHistory("Ride + ID (filter by username)");
    }
-   //JÍZDY FILTROVANÉ USERNAME
-   passVal();
-   loadLatitude(latitude);
-    loadLongitude(longitude);
   }
 
 function generateTableHistory(name) {
   let parent = document.getElementById("usermainDiv");
   let rows =[
      {
-       name: '',   
+       name: 'petr',   
        email:'petr@gmail.com',
        place:'Praha',
        phone: 895232146,
@@ -145,20 +141,3 @@ try {
        e.printStackTrace();
    System.exit(1);
    }
-
-   function passVal(){
-     var data = {
-         latitude, longitude
-     };
-
-    
-  
- }
- function loadLatitude(){
-        return data.latitude;
-    }
-
-function loadLongitude(){
-        return data.longitude;
-    }
- passVal();
