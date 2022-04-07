@@ -14,14 +14,15 @@ function emptyInputSignup($name, $email, $username, $pwd, $pwdRepeat) {
 
 
 function invalidUid($username) {
-/*	$result;
+	// opatreni proti sql drop table a podobne
+	$result;
 	if (!preg_match("/^[a-zA-Z0-9]*$/", $username)) {
 		$result = true;
 	}
 	else {
 		$result = false;
-	}*/
-	
+	}
+
 	return $result;
 }
 
