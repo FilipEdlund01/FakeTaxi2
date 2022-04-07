@@ -14,13 +14,14 @@ function emptyInputSignup($name, $email, $username, $pwd, $pwdRepeat) {
 
 
 function invalidUid($username) {
-	$result;
+/*	$result;
 	if (!preg_match("/^[a-zA-Z0-9]*$/", $username)) {
 		$result = true;
 	}
 	else {
 		$result = false;
-	}
+	}*/
+	
 	return $result;
 }
 
@@ -168,7 +169,7 @@ function pasteLocation($conn, $latitude, $longitude) {
 	  mysqli_stmt_execute($stmt);
 	  mysqli_stmt_close($stmt);
 	  mysqli_close($conn);
-	  
+
 	  header("location: ../newRide1.php?error=none");
 	  exit();
   }
