@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
   $fileActualExt = strtolower(end($fileExt));
 
   // Here WE decide which file types we will allow
-  $allowed = array('jpg', 'jpeg', 'png', 'pdf');
+  $allowed = array('jpg', 'jpeg', 'png', 'pdf','txt');
 
   // Now we check if the file is an allowed file type
   if (in_array($fileActualExt, $allowed)) {
@@ -33,8 +33,12 @@ if (isset($_POST['submit'])) {
         $fileDestination = 'uploaded-files/' . $fileNameNew;
         // Now we upload the file!
         move_uploaded_file($fileTmpName, $fileDestination);
+        $alert = "<script>alert('You sucesfully add your file to database!');</script>";
+        echo $alert;
         // And send the user back to the front page
-        header("Location: index.php?upload=success");
+        header("Location: userMain.php?upload=success");
+
+
       }
       else {
         echo "<h1>Your file is too big!</h1>";
