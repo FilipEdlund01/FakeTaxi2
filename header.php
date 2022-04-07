@@ -30,7 +30,7 @@
           <?php
             if (isset($_SESSION["useruid"])) {
              echo "<li><a href='userMain.php'>Home</a></li>";
-             echo "<li><a href='logout.php'>Logout</a></li>";
+            
              echo "<li><a href='maps.php'>Maps</a></li>";
              echo "<li><a href='uploadUI.php'>Upload Files</a></li>";
              echo "<li><a href='aboutus.php'>About Us</a></li>";
