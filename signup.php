@@ -9,7 +9,6 @@
       <div class="container h-100 p-5">
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-            
             <div class="card" style="background-color:white;">
               <div class="card-body p-5">
                 <h2 class="text-uppercase text-center mb-3 headings">Register</h2>
@@ -22,12 +21,12 @@
                     </div>
 
                     <div class="form-outline mb-3">
-                    <label class="form-label paragraphs" for="registerForm2">Email</label>
+                      <label class="form-label paragraphs" for="registerForm2">Email</label>
                       <input type="email" id="email" class="form-control form-control-lg" name="email" />
                     </div>
 
                     <div class="form-outline mb-3">
-                    <label class="form-label paragraphs" for="registerForm3">Username</label>
+                      <label class="form-label paragraphs" for="registerForm3">Username</label>
                       <input type="text" id="user" class="form-control form-control-lg" name="uid" />
                     </div>
 
@@ -37,7 +36,7 @@
                     </div>
 
                     <div class="form-outline mb-2">
-                    <label class="form-label paragraphs" for="registerForm5">Repeat your password</label>
+                      <label class="form-label paragraphs" for="registerForm5">Repeat your password</label>
                       <input type="password" id="password_repeated" class="form-control form-control-lg"
                         name="pwdrepeat" />
                     </div>

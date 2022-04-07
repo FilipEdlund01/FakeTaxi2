@@ -42,24 +42,16 @@
 				  		
                         class="btn btn-success btn-block btn-lg graduateButton text-body registerColor"
 						style="color: white!important;"
-                      
-                      
+      
                       >
 						Go To Map
 				</a>
-
 				  </div>
-				 
-
-
-
 				</form>
-  
 			  </div>
 			</div>
 		  </div>
 		</div>
-		
 	  </div>
 	</div>
 	</div>

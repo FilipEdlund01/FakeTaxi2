@@ -10,7 +10,8 @@
 	<title>Main Page</title>
 </head>
 <body>
-
+	 <!-- Video Source -->
+  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
   <section class="showcase">
     <header>
       <h2 class="logo">FAKE-TAXI: </h2>
@@ -18,7 +19,6 @@
       <div class="toggle"></div>
     </header>
     <video src="videos/background.mp4" muted loop autoplay></video>
-
     <div class="overlay"></div>
     <div class="text">
       <h2>Save Time And Money With: </h2> 
@@ -39,7 +39,15 @@
       <li><a href="#"><img src="icons_photo/instagram.png"></a></li>
     </ul>
   </section>
-
+  <div class="menu"> 
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Destination</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
   <script >
 const menuToggle = document.querySelector('.toggle');
 const showcase = document.querySelector('.showcase');
